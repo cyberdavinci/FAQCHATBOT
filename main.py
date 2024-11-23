@@ -99,12 +99,26 @@ if __name__ == "__main__":
         "How can I change my password?",
         "Where are the settings for my account?",
         "Do you take PayPal?",
-        "What is the meaning of life?"  # This should return uncertain response
+        "What is the meaning of life?"  # I am as confused as you are right now!
     ]
 
 
     answer, confidence = assistant.answer_question("Do you take PayPal?")
     print(answer,confidence)
+
+    # TRY
+    """
+    create a simple terminal version of it and make it interactive, use python input function and a while loop to keep it up and running
+
+    something like this
+
+    while True:
+        question = input("Hey there, how may I help you? ")
+        if(question == "exit".lower()):
+            break
+        answer, confidence = assistant.answer_question(question)
+        print(answer,confidence)
+    """
 
 
     
